@@ -16,7 +16,6 @@ class QT_Operations(object):
         
         WebDriverHelp().input_value("xpath","/html/body/div[21]/div/div[2]/form/div[1]/div[1]/input", userName)
         WebDriverHelp().input_value("xpath","/html/body/div[21]/div/div[2]/form/div[1]/div[2]/input", passwd)
-        time.sleep(2)
         WebDriverHelp().click_item("id","login-btn")
         time.sleep(2)
         

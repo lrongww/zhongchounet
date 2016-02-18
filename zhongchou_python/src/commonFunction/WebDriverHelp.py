@@ -70,7 +70,7 @@ class WebDriverHelp(object):
             elem = driver.find_element_by_link_text(location) 
         if type=="css":
             elem = driver.find_element_by_css_selector(location)
-        return elem.text()
+        return elem.text
     
     #清除值
     def clear_value(self,type,location):

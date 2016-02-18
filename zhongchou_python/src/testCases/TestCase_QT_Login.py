@@ -22,13 +22,14 @@ class testcases_login(unittest.TestCase):
 
 
     def tearDown(self):
-        pass
+        WebDriverHelp().teardown()#关闭浏览器
 
 
     def testlogin(self):
         #登录
         QT_Operations().login("18782952148", "zhongchou2015")
-       
+        #验证
+        self.assertEqual(WebDriverHelp().get_text("css","a.siteHCountA.btn_ALink"),"用户QWY6214…")
 
 
 if __name__ == "__main__":
